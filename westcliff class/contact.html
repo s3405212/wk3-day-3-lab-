@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>Central Park Carriage Rides</header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Contact Us</h1>
+            <p>
+                Want to book a ride or have any questions? Just fill out the form below,
+                and we’ll get back to you soon.
+            </p>
+
+            <form action="/signup" method="post">
+                <fieldset>
+                    <legend>Booking / Inquiry Form</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone">
+
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <label for="contact">Preferred Contact Method:</label>
+                    <select id="contact" name="contact">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="text">Text</option>
+                    </select>
+
+                    <label for="comments">Additional Notes:</label>
+                    <textarea id="comments" name="comments" rows="5" cols="40"
+                        placeholder="Any special requests or questions..."></textarea>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>&copy; 2026 Happy Horse LLC</footer>
+
+    </div>
+</body>
+
+</html>
